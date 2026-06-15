@@ -278,7 +278,6 @@ namespace
 				style = 1;
 				SetupImGuiStyle1();
 			}
-			}
 		}
 
 		ImGui::End();
@@ -289,11 +288,6 @@ namespace
 	{
 		Logger::infoBig("App destroyed");
 	}
-
-
-
-
-
 }
 
 
