@@ -28,7 +28,7 @@ int main()
     glfwWindowHint(GLFW_DECORATED, GLFW_FALSE);
 	glfwWindowHint(GLFW_TRANSPARENT_FRAMEBUFFER, GLFW_TRUE);
 
-    GLFWwindow* window = glfwCreateWindow(App::windows_width, App::windows_height, App::windows_name, nullptr, nullptr);
+    GLFWwindow* window = glfwCreateWindow(windows_width, windows_height, windows_name, nullptr, nullptr);
     if (window == nullptr)
     {
         std::cerr << "Failed to create GLFW window\n";
@@ -52,7 +52,7 @@ int main()
 
 	applyCocoImGuiStyle();
 
-    App::init();
+	init();
 
 
     while (!glfwWindowShouldClose(window))
@@ -72,7 +72,7 @@ int main()
 
         //ImGui::DockSpaceOverViewport(NULL, NULL, ImGuiDockNodeFlags_PassthruCentralNode);
 
-        App::update();
+		update();
 
         ImGui::Render();
         int display_w, display_h;
@@ -93,7 +93,7 @@ int main()
         glfwSwapBuffers(window);
     }
 
-    App::destroy();
+	destroy();
 
     ImGui_ImplOpenGL3_Shutdown();
     ImGui_ImplGlfw_Shutdown();
@@ -118,8 +118,8 @@ void applyCocoImGuiStyle()
 	style.Alpha = 1.0f;
 	style.DisabledAlpha = 1.0f;
 	style.WindowPadding = ImVec2(12.0f, 12.0f);
-	style.WindowRounding = 8.0f;
-	style.WindowBorderSize = 0.0f;
+	style.WindowRounding = 12.0f;
+	style.WindowBorderSize = 3.0f;
 	style.WindowMinSize = ImVec2(20.0f, 20.0f);
 	style.WindowTitleAlign = ImVec2(0.5f, 0.5f);
 	style.WindowMenuButtonPosition = ImGuiDir_Right;

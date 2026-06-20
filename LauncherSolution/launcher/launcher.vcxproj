@@ -148,6 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\app\app.cpp" />
+    <ClCompile Include="src\app\appLibrary.cpp" />
     <ClCompile Include="src\imgui\imgui.cpp" />
     <ClCompile Include="src\imgui\imgui_demo.cpp" />
     <ClCompile Include="src\imgui\imgui_draw.cpp" />
@@ -156,6 +157,7 @@
     <ClCompile Include="src\imgui\imgui_impl_glfw.cpp" />
     <ClCompile Include="src\imgui\imgui_impl_opengl3.cpp" />
     <ClCompile Include="src\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="src\imgui\imgui_stdlib.cpp" />
     <ClCompile Include="src\imgui\imgui_tables.cpp" />
     <ClCompile Include="src\imgui\imgui_widgets.cpp" />
     <ClCompile Include="src\imgui\implot.cpp" />
@@ -178,6 +180,7 @@
     <ClInclude Include="external\include\GLFW\glfw3.h" />
     <ClInclude Include="external\include\GLFW\glfw3native.h" />
     <ClInclude Include="src\app\app.h" />
+    <ClInclude Include="src\app\appLibrary.h" />
     <ClInclude Include="src\imgui\imconfig.h" />
     <ClInclude Include="src\imgui\imgui.h" />
     <ClInclude Include="src\imgui\imgui_impl_dx11.h" />
@@ -187,6 +190,7 @@
     <ClInclude Include="src\imgui\imgui_impl_opengl3_loader.h" />
     <ClInclude Include="src\imgui\imgui_impl_win32.h" />
     <ClInclude Include="src\imgui\imgui_internal.h" />
+    <ClInclude Include="src\imgui\imgui_stdlib.h" />
     <ClInclude Include="src\imgui\implot.h" />
     <ClInclude Include="src\imgui\implot3d.h" />
     <ClInclude Include="src\imgui\implot3d_internal.h" />
